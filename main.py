@@ -12,4 +12,4 @@ async def root():
 @app.post("/imageToText")
 def root(file: UploadFile = File(...)):
     result = imgToText(file.file)
-    return {"text": "hh"}
+    return {"text": result}
