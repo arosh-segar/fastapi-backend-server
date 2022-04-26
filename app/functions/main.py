@@ -1,5 +1,5 @@
 from fastapi import FastAPI, UploadFile, File
-from app.functions.tesseract import imgToText
+from tesseract import imgToText
 
 app = FastAPI()
 
